@@ -22,8 +22,8 @@ export default class Nav extends Component {
                         </ul>
                     </div>
                 </div>
-                <div className="ant-layout-header">
-                    <div className="ant-layout-wrapper">
+                <div className="ant-layout-wrapper">
+                    <div className="ant-layout-header">
                         <div className="logo">
                             <img src="http://iov.changan.com.cn/cs/static/img/logoAndTitle.png"/>
                         </div>

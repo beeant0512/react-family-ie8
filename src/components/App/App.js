@@ -10,7 +10,13 @@ export default class App extends Component {
         return (
             <div>
                 <Header/>
-                {getRouter()}
+                 <div className="ant-layout-wrapper">
+                    <div className="ant-layout-container">
+                        <div style={{ height: 210 }}>
+                        {getRouter()}
+                        </div>
+                    </div>
+                 </div>
                 <Footer />
             </div>
         )

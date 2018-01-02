@@ -15,15 +15,13 @@ html, body, #app {
   line-height: 30px;
   background-color: #242736;
   color: #ddd;
-}
-
-.ant-layout-ceiling .right {
-  float: right;
-}
-
-.ant-layout-ceiling ul li {
-  display: inline-block;
-  margin: 0 4px;
+  .right {
+    float: right;
+  }
+  ul li {
+    display: inline-block;
+    margin: 0 4px;
+  }
 }
 
 .ant-layout-wrapper {
@@ -34,6 +32,29 @@ html, body, #app {
   background: #fff;
   height: 64px;
   border-bottom: 1px solid #d9d9d9;
+  ul {
+    text-align: center;
+    position: relative;
+    width: 100%;
+  }
+}
+
+.ant-layout-container {
+    background: #fff;
+    margin: 24px 0 0;
+    position: relative;
+    padding-top: 24px;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+
+.ant-layout-footer {
+  margin: 24px 0 0;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
 }
 
 .ant-layout-logo {

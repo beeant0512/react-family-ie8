@@ -1,17 +1,13 @@
 import React, {Component} from 'react';
-import Header from '../Layout/Header';
-import Footer from '../Layout/Footer';
-import getRouter from '../../router/router';
-import 'antd/dist/antd.css';
-import style from '../../common/style.less';
+import Nav from 'components/Nav/Nav';
+import getRouter from 'router/router';
 
 export default class App extends Component {
     render() {
         return (
             <div>
-                <Header/>
+                <Nav/>
                 {getRouter()}
-                <Footer />
             </div>
         )
     }

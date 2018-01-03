@@ -16,7 +16,15 @@ let Home = React.createClass({
           label="账户"
         >
           <Input placeholder="请输入账户名"
-            {...getFieldProps('userName')}
+            {...getFieldProps('userName', {
+                rules: [
+                    { required: true, whitespace: true, message: '请填写密码' },
+                    { validator: this.checkPass },
+                ],
+                onChange: (e) => {
+                    console.log('你的密码就是这样被盗的：', e.target.value);
+                },
+            })}
           />
         </FormItem>
         <FormItem
